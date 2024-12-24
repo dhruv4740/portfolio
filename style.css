@@ -8,6 +8,11 @@ body {
     line-height: 1.6;
 }
 
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Header Styling */
 header {
     background-color: #282828;
