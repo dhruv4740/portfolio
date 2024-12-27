@@ -15,7 +15,10 @@ html {
 
 /* Header Styling */
 header {
-    background-color: #282828;
+    position: sticky; /* This makes the header stick to the top */
+    top: 0; /* Ensures it sticks at the top */
+    z-index: 1000; /* Keeps it above other elements */
+    background-color: #282828; /* Maintains the background color */
     color: #ffffff;
     padding: 1.5em 0;
     text-align: center;
@@ -34,6 +37,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap; /* Ensure the items wrap on smaller screens */
 }
 
 nav ul li a {
@@ -120,6 +124,7 @@ footer ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 footer ul li a {
@@ -155,4 +160,41 @@ button:hover {
 nav ul li a.active {
     background-color: #4e8cf2;
     color: #ffffff;
+}
+
+/* Responsive Adjustments for Small Screens */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 0;
+    }
+
+    header h1 {
+        font-size: 1.8em; /* Adjust font size for smaller screens */
+    }
+
+    nav ul {
+        gap: 15px; /* Reduce spacing for navigation links */
+    }
+
+    section {
+        padding: 1.5em;
+        margin: 1em 5%; /* Use more screen space on mobile */
+    }
+
+    section h2 {
+        font-size: 1.6em; /* Slightly smaller heading */
+    }
+
+    section p, section ul {
+        font-size: 1em; /* Adjust font size for readability */
+    }
+
+    footer p {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .resume-button {
+        font-size: 14px; /* Smaller button size on mobile */
+    }
 }
