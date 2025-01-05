@@ -58,7 +58,7 @@ nav ul li a.active {
 /* Section Styling */
 /* Adjust sections to account for the pinned header */
 section {
-    scroll-margin-top: 120px; /* Adjust the value to match your header height */
+    scroll-margin-top: 130px; /* Adjust the value to match your header height */
     padding: 2em;
     margin: 1em auto;
     background: #282828;
